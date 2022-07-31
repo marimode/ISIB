@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  /* header style */
+  header {
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    transition: 0.6s;
+    padding: 25px 100px;
+    align-items: center;
+    background-color: rgba(216, 171, 112, 0.699);
+    color: #fff;
+    z-index: 1000000;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menu a {
+    padding: 0 10px;
+}
+
+.menu a:hover {
+    color: rgb(165, 172, 143);
+}
+
+.logo {
+    width: 70px;
+    margin-left:30px ;
+}
+
+/* section1  */
+
+
+main {
+    min-height: 50vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    text-align: center;
+    color: rgb(78, 82, 172);
+    margin: 10px;
+    font-size: 25px;
+}
+
+.center {
+    margin: 10rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin: 10px;
+}
+
+.center img {
+    width: 8%;
+}
+
+.center h1 {
+    color: rgb(177, 63, 226);
+    font-size: 50px;
+}
+
+.answears {
+    padding: 20px;
+    font-size: 30px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .team_member{
+    width: 80%;
+    height: auto;
+    border: 2px solid rgb(170, 64, 152);
+    display: flex;
+}
+
+.team_member img {
+    width:35%;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid rgb(84, 20, 84);
+}
+
+.team_member:hover{
+    background-color: rgba(108, 25, 186, 0.189);
+}
+
+p {
+    margin: 3px;
+}
+
+.memeber_name {
+    margin: 30px;
+    color: rgb(103, 78, 172);
+}
+
+ul {
+    font-size: 15px;
+    margin: 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.txtSubjects {
+    margin: 10px;
+}
+
+hr {
+    margin-top: 10px;
+    color: black;
+}
+
+ 
+  /* footer */
+  .floatCategory {
+    padding-bottom: 10px;
+    
+  }
+  .floatCategoryIn {
+    width: 85%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+
+  }
+
+  .flLeft {
+    width: 70%;
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  .wellcome {
+    margin-bottom: 30px;
+    line-height: 24px;
+  }
+
+  .floatTxt {
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+
+
+  footer {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  @media only screen and (max-width: 800px) {
+    .center img {
+      width: 15%;
+    }
+}
+
+
+@media only screen and (max-width: 975px) {
+   section .team_member  {
+        display: block;
+    }
+
+    .team_member img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .subjects {
+        padding: 10px;
+    }
+
+    .center img {
+        width: 20%;
+      }
+
+      header {
+        padding: 10px 50px;
+      }
+
+      .logo {
+        margin-left: -30px;
+      }
+ }
+
+
+ @media only screen and (max-width: 380px) {
+  
+    .center img {
+        width: 45%;
+      }
+
+    .team_member img {
+        width: 90%;
+    }
+
+      .logo {
+        width: 50px;
+      }
+
+      .menu a {
+        padding: 0 5px;
+    }
+
+    .center h1 {
+        font-size: 40px;
+      }
+ }
+
+ @media only screen and (max-width: 460px) {
+  
+    .center img {
+        width: 45%;
+      }
+
+      .center h1 {
+        font-size: 40px;
+      }
+
+      .menu a {
+        padding: 0 5px;
+    }
+}
+
+    @media only screen and (max-width: 1300px) {
+
+        .center img {
+            width: 25%;
+        }
+    }
+  
+    @media only screen and (max-width: 360px) {
+
+        .menu a {
+            padding: 10px;
+        }
+        .center img {
+            width: 40%;
+        }
+
+        .menu {
+            display: block;
+        }
+
+        .logo {
+            width: 40%;
+        }
+    }
+
+
+    @media only screen and (max-width: 400px) {
+
+        .center {
+            margin: 10rem 0 0 0;
+        }
+
+        .menu a {
+            display: block;
+            padding: 3px;
+        }
+    }

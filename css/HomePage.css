@@ -1,0 +1,472 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* header style */
+header {
+display: flex;
+top: 0;
+left: 0;
+width: 100%;
+position: fixed;
+justify-content: space-between;
+padding: 25px 100px;
+align-items: center;
+background-color: rgba(216, 171, 112, 0.699);
+color: #fff;
+z-index: 1000000;
+}
+
+header a {
+color: #fff;
+text-decoration: none;
+}
+
+.menu {
+display: flex;
+list-style: none;
+margin-right: 30px;
+}
+
+.menu a {
+padding: 0 10px;
+}
+
+.menu a:hover {
+color: rgb(165, 172, 143);
+}
+
+.logo {
+width: 70px;
+margin-left:30px ;
+}
+
+/* main style */
+
+.banner {
+  width: 100%;
+  height: 90vh;
+  background-image: url("light.PNG");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+  
+.mainphoto h2 
+{
+    text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #155722 0%,
+    #7a6610 29%,
+    #1c6a50 67%,
+    #a87a2a 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 40px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.catLogo {
+  width: 25%;
+  margin-left: 10%;
+  margin-bottom: 0px;
+}
+
+.mainphoto {
+  display: grid;
+  position: absolute;
+  bottom: 30%;
+  left: 35%;
+}
+
+.team {
+  width: 100%;
+  background: #e6d7d6;  
+  font-size: 1.2em;
+  padding: 10px 20px; 
+}
+
+.meet {
+  width: 15%;
+  background-color: #967483;
+  text-transform: uppercase;
+  padding: 15px 42px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 70px;
+  z-index: 2;
+}
+
+.triange {
+  width: 30px;
+  height: 30px;
+  background-color: #967483;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: 1;
+}
+
+
+.team_members {
+  width: 70%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.team_member {
+  background-color: rgba(76,63,75,.5);
+  padding: 44px 48px 33px 48px;
+  width: 24%;
+}
+
+.member_image {
+  width: 164px;
+  height: 164px;
+  margin: auto;
+  border: 5px solid #a1859e;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: #fff;
+  margin-bottom: 25px;
+}
+
+.member_name {
+  font-size: 25px;
+  color: #c7b6c5;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.member_position {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #a1ca6c;
+  font-size: 14px;
+}
+
+.team_member:hover {
+  background-color: rgba(76,63,75,.8);
+}
+
+.team_member:hover .member_image {
+  border-color: #df5c64;
+}
+
+.team_member:hover .member_name {
+  color: #fff;
+}
+
+.team_member:hover .member_position {
+  color: #ff8973;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 20%; 
+  background-image: url('book.png');
+  }
+
+.floatCategoryIn {
+  padding-bottom: 10px;
+  width: 85%;
+  display: flex;
+}
+
+.flLeft {
+  width: 70%;
+  color: rgb(170, 169, 169);
+  margin: 6%;
+}
+
+.flLeft  h1 {
+  color: #CD8989;
+  margin-bottom: 5px;
+}
+
+.floatTxt {
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+
+.cat {
+  width: 30%;
+  padding-left: 5%;
+  margin-top: 30px;
+  margin-left: 30px
+}
+.cat h2 {
+  margin-bottom: 10px;
+  color: #488F97;
+}
+.cat_menu {
+  background-color: rgba(211, 211, 211, 0.459);
+  -webkit-box-shadow: -2px -5px 8px -4px grey;
+  box-shadow: 0px -6px 3px -1px grey;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  list-style: none;
+  padding: 10px;
+  display: grid;
+}
+
+.cat_menu a {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.cat_menu a:hover {
+  background-color: #72594F;
+  color: #fff;
+  text-decoration:none;
+}
+.cat_menu a {
+  text-decoration:none;
+  color: black;
+}
+
+
+@media only screen and (max-width: 1350px) {
+  .team_member {
+    width: 30%;
+  }
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+
+.banner {
+  height: 80vh;
+}
+
+.mainphoto {
+  bottom: 40%;
+}
+
+
+    .center img {
+        width: 25%;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+.team_members {
+  display: block;
+  margin-left: 35%;
+  width: 90%;
+}
+
+.team_member {
+  margin: 10px;
+}
+
+.mainphoto {
+  bottom: 45%;
+  left: 35%;
+}
+
+.banner {
+  width: 185vh;
+  height: 70vh;
+}
+}
+
+
+@media only screen and (max-width: 800px) {
+.banner {
+  height: 70vh;
+}
+
+.mainphoto {
+  bottom: 50%;
+  left: 40%;
+}
+
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+
+  header {
+    padding: 10px 50px;
+  }
+
+
+  .banner {
+    height: 70vh;
+  }
+
+  .mainphoto {
+    bottom: 50%;
+    left: 65%;
+  }
+
+  .mainphoto h2 {
+    font-size: 40px;
+  }
+
+  .catLogo {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .mainphoto {
+    bottom: 50%;
+    left: 85%;
+  }
+
+  .catLogo {
+    width: 50%;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+  .mainphoto h1 {
+    font-size: 30px;
+  }
+
+  .banner {
+    height: 85vh;
+  }
+
+  .menu a {
+    padding: 3px;
+}
+
+  .mainphoto {
+    bottom: 45%;
+  }
+
+  .catLogo {
+    width: 70%;
+  }
+}
+
+
+
+@media only screen and (max-width: 460px) {
+
+.center img {
+    width: 45%;
+  }
+
+  .center h1 {
+    font-size: 40px;
+  }
+
+  .menu a {
+    padding: 0 5px;
+}
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    main {
+      padding-top: 5rem;
+    }
+
+    .mainphoto {
+      bottom: 45%;
+      left: 30%;
+    }
+
+    .banner {
+      height: 45vh;
+      width: 65vh;
+    }
+
+    .menu a {
+        display: block;
+        padding: 3px;
+    }
+    .logo {
+      margin-left: -30px;
+    }
+}
+
+
+
+@media only screen and (max-width: 380px) {
+
+.center img {
+    width: 45%;
+  }
+
+.team_member img {
+    width: 90%;
+}
+
+  .logo {
+    width: 50px;
+  }
+
+  .menu a {
+    padding: 0 5px;
+}
+
+.center h1 {
+    font-size: 40px;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 360px) {
+
+  .center img {
+    width: 40%;
+}
+    .menu a {
+        padding: 10px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .logo {
+        width: 40%;
+    }
+}
+
